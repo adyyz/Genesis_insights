@@ -1,0 +1,9 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Browsers use the backend API. Server access requires IAM and API authorization.
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

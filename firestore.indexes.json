@@ -1,0 +1,1275 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "bulk_jobs",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "dataset_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "created_at",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "analytical_snapshots",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "dataset_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "created_at",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "transactions",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "dataset_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "account_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "occurred_at",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "alerts",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "dataset_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "status",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "created_at",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "pipeline_runs",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "parent_run_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "created_at",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "step_runs",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "run_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "leg_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "attempt_number",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "step_runs",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "dataset_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "leg_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "started_at",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "feedback_events",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "dataset_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "alert_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "revision",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "evolution_runs",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "dataset_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "cutoff_at",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "recommendations",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "evolution_run_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "state",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "audit_events",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "run_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "occurred_at",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "pipeline_runs",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "dataset_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "created_at",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "pipeline_runs",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "dataset_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "kind",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "created_at",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "pipeline_runs",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "dataset_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "kind",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "state",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "feedback_events",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "dataset_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "submitted_at",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "auto_label_calibrations",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "dataset_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "created_at",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "auto_label_candidates",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "dataset_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "frozen_at",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "auto_label_assessments",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "dataset_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "created_at",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "alerts",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "dataset_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "status",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "alerts",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "dataset_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "feedback_revision",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "bulk_case_progress",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "dataset_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "triaged",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "bulk_case_progress",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "dataset_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "reviewed",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "feedback_events",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "dataset_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "verdict",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "bulk_case_progress",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "dataset_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "ordinal",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "bulk_case_progress",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "dataset_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "eligible",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "triaged",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "ordinal",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "bulk_case_progress",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "dataset_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "triaged",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "reviewed",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "ordinal",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "bulk_case_progress",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "dataset_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "reviewed",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "ordinal",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "bulk_case_progress",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "dataset_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "rules",
+          "arrayConfig": "CONTAINS"
+        },
+        {
+          "fieldPath": "ordinal",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "bulk_case_progress",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "dataset_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "eligible",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "triaged",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "rules",
+          "arrayConfig": "CONTAINS"
+        },
+        {
+          "fieldPath": "ordinal",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "bulk_case_progress",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "dataset_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "triaged",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "reviewed",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "rules",
+          "arrayConfig": "CONTAINS"
+        },
+        {
+          "fieldPath": "ordinal",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "bulk_case_progress",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "dataset_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "reviewed",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "rules",
+          "arrayConfig": "CONTAINS"
+        },
+        {
+          "fieldPath": "ordinal",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "bulk_case_progress",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "dataset_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "customer_type",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "ordinal",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "bulk_case_progress",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "dataset_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "customer_type",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "eligible",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "triaged",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "ordinal",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "bulk_case_progress",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "dataset_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "customer_type",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "triaged",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "reviewed",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "ordinal",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "bulk_case_progress",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "dataset_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "customer_type",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "reviewed",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "ordinal",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "bulk_case_progress",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "dataset_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "customer_type",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "rules",
+          "arrayConfig": "CONTAINS"
+        },
+        {
+          "fieldPath": "ordinal",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "bulk_case_progress",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "dataset_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "customer_type",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "eligible",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "triaged",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "rules",
+          "arrayConfig": "CONTAINS"
+        },
+        {
+          "fieldPath": "ordinal",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "bulk_case_progress",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "dataset_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "customer_type",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "triaged",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "reviewed",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "rules",
+          "arrayConfig": "CONTAINS"
+        },
+        {
+          "fieldPath": "ordinal",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "bulk_case_progress",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "dataset_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "customer_type",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "reviewed",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "rules",
+          "arrayConfig": "CONTAINS"
+        },
+        {
+          "fieldPath": "ordinal",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "bulk_case_progress",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "dataset_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "identity_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "ordinal",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "bulk_case_progress",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "dataset_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "identity_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "eligible",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "triaged",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "ordinal",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "bulk_case_progress",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "dataset_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "identity_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "triaged",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "reviewed",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "ordinal",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "bulk_case_progress",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "dataset_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "identity_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "reviewed",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "ordinal",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "bulk_case_progress",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "dataset_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "identity_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "rules",
+          "arrayConfig": "CONTAINS"
+        },
+        {
+          "fieldPath": "ordinal",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "bulk_case_progress",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "dataset_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "identity_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "eligible",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "triaged",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "rules",
+          "arrayConfig": "CONTAINS"
+        },
+        {
+          "fieldPath": "ordinal",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "bulk_case_progress",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "dataset_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "identity_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "triaged",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "reviewed",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "rules",
+          "arrayConfig": "CONTAINS"
+        },
+        {
+          "fieldPath": "ordinal",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "bulk_case_progress",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "dataset_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "identity_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "reviewed",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "rules",
+          "arrayConfig": "CONTAINS"
+        },
+        {
+          "fieldPath": "ordinal",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "bulk_case_progress",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "dataset_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "identity_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "customer_type",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "ordinal",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "bulk_case_progress",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "dataset_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "identity_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "customer_type",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "eligible",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "triaged",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "ordinal",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "bulk_case_progress",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "dataset_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "identity_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "customer_type",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "triaged",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "reviewed",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "ordinal",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "bulk_case_progress",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "dataset_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "identity_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "customer_type",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "reviewed",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "ordinal",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "bulk_case_progress",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "dataset_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "identity_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "customer_type",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "rules",
+          "arrayConfig": "CONTAINS"
+        },
+        {
+          "fieldPath": "ordinal",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "bulk_case_progress",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "dataset_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "identity_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "customer_type",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "eligible",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "triaged",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "rules",
+          "arrayConfig": "CONTAINS"
+        },
+        {
+          "fieldPath": "ordinal",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "bulk_case_progress",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "dataset_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "identity_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "customer_type",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "triaged",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "reviewed",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "rules",
+          "arrayConfig": "CONTAINS"
+        },
+        {
+          "fieldPath": "ordinal",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "bulk_case_progress",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "dataset_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "identity_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "customer_type",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "reviewed",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "rules",
+          "arrayConfig": "CONTAINS"
+        },
+        {
+          "fieldPath": "ordinal",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "auto_label_candidates",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "dataset_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "applied_at",
+          "order": "DESCENDING"
+        }
+      ]
+    }
+  ],
+  "fieldOverrides": [
+    {
+      "collectionGroup": "analytical_snapshots",
+      "fieldPath": "body",
+      "indexes": []
+    },
+    {
+      "collectionGroup": "step_runs",
+      "fieldPath": "input_snapshot",
+      "indexes": []
+    },
+    {
+      "collectionGroup": "step_runs",
+      "fieldPath": "output",
+      "indexes": []
+    },
+    {
+      "collectionGroup": "step_runs",
+      "fieldPath": "provider_usage_raw",
+      "indexes": []
+    },
+    {
+      "collectionGroup": "datasets",
+      "fieldPath": "reference_labels",
+      "indexes": []
+    },
+    {
+      "collectionGroup": "datasets",
+      "fieldPath": "split_manifest",
+      "indexes": []
+    },
+    {
+      "collectionGroup": "config_versions",
+      "fieldPath": "body",
+      "indexes": []
+    },
+    {
+      "collectionGroup": "publications",
+      "fieldPath": "public_cases",
+      "indexes": []
+    },
+    {
+      "collectionGroup": "publications",
+      "fieldPath": "public_evolution",
+      "indexes": []
+    },
+    {
+      "collectionGroup": "publications",
+      "fieldPath": "public_metrics",
+      "indexes": []
+    },
+    {
+      "collectionGroup": "evaluations",
+      "fieldPath": "metrics",
+      "indexes": []
+    },
+    {
+      "collectionGroup": "simulations",
+      "fieldPath": "baseline_case_detection",
+      "indexes": []
+    },
+    {
+      "collectionGroup": "simulations",
+      "fieldPath": "candidate_case_detection",
+      "indexes": []
+    },
+    {
+      "collectionGroup": "simulations",
+      "fieldPath": "metrics",
+      "indexes": []
+    },
+    {
+      "collectionGroup": "auto_label_candidates",
+      "fieldPath": "training",
+      "indexes": []
+    },
+    {
+      "collectionGroup": "auto_label_candidates",
+      "fieldPath": "validation",
+      "indexes": []
+    },
+    {
+      "collectionGroup": "auto_label_assessments",
+      "fieldPath": "body",
+      "indexes": []
+    },
+    {
+      "collectionGroup": "auto_label_calibrations",
+      "fieldPath": "results",
+      "indexes": []
+    },
+    {
+      "collectionGroup": "evolution_publications",
+      "fieldPath": "body",
+      "indexes": []
+    },
+    {
+      "collectionGroup": "auto_label_training_chunks",
+      "fieldPath": "rows",
+      "indexes": []
+    },
+    {
+      "collectionGroup": "auto_label_candidates",
+      "fieldPath": "training_chunks",
+      "indexes": []
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+# Build context allowlist. Never send environments, credentials or local evidence.
+**
+!Dockerfile
+!.dockerignore
+!package.json
+!package-lock.json
+!tsconfig.json
+!vite.config.ts
+!pyproject.toml
+!uv.lock
+!backend/
+!backend/*.py
+!frontend/
+!frontend/*.ts
+!frontend/*.tsx
+!frontend/*.css
+!frontend/index.html

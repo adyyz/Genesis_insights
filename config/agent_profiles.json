@@ -1,0 +1,40 @@
+{
+  "version": "1.0",
+  "profiles": {
+    "fast_triage": {
+      "capability": "FAST_CLASSIFICATION",
+      "model_id": "gemini-3.5-flash",
+      "description": "Sub-second structured triage and categorization",
+      "thinking_level": "MINIMAL",
+      "temperature": 0.1
+    },
+    "risk_explainer": {
+      "capability": "STRUCTURED_REASONING",
+      "model_id": "gemini-3.5-flash",
+      "description": "Explains code-computed risk scores, counter-evidence, and boundaries",
+      "thinking_level": "MINIMAL",
+      "temperature": 0.2
+    },
+    "deep_investigation": {
+      "capability": "DEEP_INVESTIGATION",
+      "model_id": "gemini-3.5-flash",
+      "description": "Multi-hop evidence synthesis, complex reasoning, and cited brief",
+      "thinking_level": "MINIMAL",
+      "temperature": 0.2
+    },
+    "meta_evolution": {
+      "capability": "META_EVOLUTION",
+      "model_id": "gemini-3.5-flash",
+      "description": "Analyzes historical noise distributions to propose rule changes",
+      "thinking_level": "MINIMAL",
+      "temperature": 0.1
+    }
+  },
+  "leg_mapping": {
+    "A3": "fast_triage",
+    "A2": "risk_explainer",
+    "A4": "deep_investigation",
+    "A5": "meta_evolution"
+  }
+}
+

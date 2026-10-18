@@ -1,0 +1,13 @@
+{
+  "status": "PREPARATION_ONLY",
+  "source_publication_authorized": false,
+  "code_fingerprint": null,
+  "project_id": "YOUR_GOOGLE_CLOUD_PROJECT",
+  "database": "(default)",
+  "manifest_hash": "9f297c1dd06ef395d9dad851348d15c5ffa4db95cedb49dc4ad7b5b36130dfa0",
+  "approved_service_coverage": [],
+  "credit_verification_expires_at": null,
+  "publisher_identity": null,
+  "operator_uids": [],
+  "admin_uids": []
+}

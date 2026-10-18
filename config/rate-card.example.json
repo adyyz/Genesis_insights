@@ -1,0 +1,21 @@
+{
+  "verified": false,
+  "verified_by": "REQUIRES_REAL_REVIEW",
+  "provider": "GOOGLE_CLOUD",
+  "service": "aiplatform.googleapis.com",
+  "currency": "USD",
+  "model_id": "REPLACE_VERIFIED_MODEL",
+  "location": "REPLACE_VERIFIED_LOCATION",
+  "billing_mode": "STANDARD_ON_DEMAND_TEXT",
+  "usage_semantics": "PROMPT_INCLUDES_CACHE_THOUGHTS_SEPARATE_V1",
+  "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+  "input_sku": "REPLACE_VERIFIED_INPUT_SKU",
+  "cached_input_sku": "REPLACE_VERIFIED_CACHE_SKU",
+  "output_sku": "REPLACE_VERIFIED_OUTPUT_SKU",
+  "effective_from": null,
+  "effective_until": null,
+  "max_input_tokens": null,
+  "uncached_prompt_usd_micros_per_million": null,
+  "cached_prompt_usd_micros_per_million": null,
+  "output_including_thoughts_usd_micros_per_million": null
+}

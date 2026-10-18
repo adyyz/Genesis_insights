@@ -1,0 +1,53 @@
+{
+  "status": "PREPARATION_ONLY",
+  "project_id": "YOUR_GOOGLE_CLOUD_PROJECT",
+  "region": null,
+  "approved_service_coverage": [],
+  "credit_verification_expires_at": null,
+  "actions_enabled": false,
+  "deployed_code_fingerprint": null,
+  "model": {
+    "cloud_transport": "CODE_PREPARED_NOT_EXECUTED",
+    "verified_model_id": null,
+    "verified_location": null,
+    "rate_card_id": null
+  },
+  "web": {
+    "docker_target": "web",
+    "image_digest": null,
+    "runtime_service_account": null,
+    "public_read_only": true,
+    "operator_uids": [],
+    "admin_uids": [],
+    "live_ai_enabled": false,
+    "minimum_instances": 0,
+    "maximum_instances": 1
+  },
+  "worker": {
+    "cloud_http_handler": "CODE_PREPARED_NOT_DEPLOYED",
+    "docker_target": "worker",
+    "image_digest": null,
+    "service_url": null,
+    "runtime_service_account": null,
+    "task_invoker_service_account": null,
+    "public_invocation_allowed": false,
+    "concurrency": 1,
+    "minimum_instances": 0,
+    "maximum_instances": 1,
+    "execution_bound_seconds": 240,
+    "lease_seconds": 300,
+    "dispatch_generations": "CODE_PREPARED_NOT_DEPLOYED",
+    "request_timeout_seconds": 300
+  },
+  "queue": {
+    "dispatch_enabled": false,
+    "name": null,
+    "location": null,
+    "dispatch_deadline_seconds": 300,
+    "maximum_concurrent_dispatches": 1,
+    "oidc_audience": null
+  },
+  "cloud_build_artifact_storage_coverage": "UNVERIFIED",
+  "container_build_verification": "NOT_RUN_NO_LOCAL_ENGINE",
+  "release_evidence": "docs/evaluation-record.json"
+}

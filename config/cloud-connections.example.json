@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "environment": "example-only",
+  "project_id": "YOUR_GOOGLE_CLOUD_PROJECT",
+  "project_number": "YOUR_PROJECT_NUMBER",
+  "funding_status": "UNVERIFIED",
+  "region": "YOUR_REGION",
+  "artifact_repository": "YOUR_REGION-docker.pkg.dev/YOUR_GOOGLE_CLOUD_PROJECT/YOUR_REPOSITORY",
+  "runtime_service_accounts": {
+    "web": "YOUR_WEB_SERVICE_ACCOUNT",
+    "worker": "YOUR_WORKER_SERVICE_ACCOUNT",
+    "tasks": "YOUR_TASKS_SERVICE_ACCOUNT"
+  },
+  "secret_store": {
+    "provider": "google-secret-manager",
+    "status": "NOT_CONFIGURED",
+    "naming_prefix": "genesis-",
+    "secret_values": "NEVER_STORE_IN_THIS_FILE",
+    "gemini_secret_version": "YOUR_SECRET_VERSION_OR_NONE"
+  },
+  "connections": {
+    "gemini": {
+      "auth": "application-default-credentials",
+      "secret_required": false,
+      "status": "NOT_CONNECTED"
+    },
+    "firestore": {
+      "auth": "application-default-credentials",
+      "secret_required": false,
+      "status": "NOT_CONFIGURED",
+      "database_id": "(default)"
+    },
+    "cloud_tasks": {
+      "auth": "application-default-credentials-and-oidc",
+      "secret_required": false,
+      "status": "NOT_CONFIGURED",
+      "queue_path": "YOUR_QUEUE_PATH"
+    },
+    "firebase_auth": {
+      "auth": "firebase-user-id-token",
+      "secret_required": false,
+      "status": "NOT_CONFIGURED",
+      "app_id": "YOUR_FIREBASE_APP_ID"
+    },
+    "gemini_developer_api_optional": {
+      "enabled": false,
+      "secret_required": true,
+      "secret_id_if_adopted": "YOUR_OPTIONAL_GEMINI_SECRET_ID",
+      "status": "NOT_CONFIGURED",
+      "last_connectivity_run_id": null
+    }
+  },
+  "notes": [
+    "Non-secret inventory only; not loaded by the application.",
+    "No credentials, tokens, passwords, private keys, or secret payloads belong here.",
+    "One Google Cloud secret store covers external keys; a separate Gemini vault is not needed.",
+    "Local application settings remain unchanged."
+  ]
+}
